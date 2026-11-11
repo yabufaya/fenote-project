@@ -76,7 +76,7 @@ export default function Footer({ setOverlay }) {
   const renderAddress = (text) => {
     if (!text) return '';
     return text.split('\\n').join('\n').split('\n').map((line, i) => (
-      <span key={i}>{line}<br/></span>
+      <span key={i}>{line}<br /></span>
     ));
   };
 
@@ -188,14 +188,27 @@ export default function Footer({ setOverlay }) {
             </div>
 
             {/* Single embedded map — Contact section no longer loads a second copy */}
-            <div className="relative rounded-2xl overflow-hidden border border-theme shadow-lg shadow-black/5 group" {...revealItem(1, 'right')}>
+            <div className="relative rounded-2xl overflow-hidden border border-theme shadow-lg shadow-black/5 group">
+              {/* Top overlay action bar */}
+              <div className="absolute top-3 right-3 z-20">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Bole,+Addis+Ababa,+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary/90 hover:bg-primary text-secondary text-xs font-semibold px-3 py-1.5 rounded-lg shadow-md transition flex items-center gap-1.5 backdrop-blur-sm"
+                >
+                  <Icon icon="solar:routing-2-bold" className="text-fenote-500 text-sm" />
+                  {t('contact.getDirections', 'Get Directions')}
+                </a>
+              </div>
+
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 to-transparent z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
-              
+
               {c?.map_embed_url ? (
                 <iframe
                   title={t('contact.mapTitle')}
                   src={getMapUrl(c.map_embed_url)}
-                  className="w-full h-56 md:h-64 border-0 grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-56 md:h-64 border-0 brightness-75 contrast-100 group-hover:brightness-100 transition-all duration-500"
                   allowFullScreen=""
                   loading="lazy"
                 />
@@ -204,7 +217,6 @@ export default function Footer({ setOverlay }) {
                   {t('common.mapLoading')}
                 </div>
               )}
-              
             </div>
           </div>
         </div>
@@ -214,7 +226,7 @@ export default function Footer({ setOverlay }) {
       <div className="footer-dark border-t border-white/10 py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-            
+
             {/* Column 1: Logo & Desc & Socials */}
             <div {...revealItem(0)}>
               <div className="flex items-center gap-2.5 mb-4">
