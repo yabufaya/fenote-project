@@ -1,0 +1,457 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "services": "Services",
+    "team": "Team",
+    "gallery": "Gallery",
+    "resources": "Resources",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "backHome": "Back to Home",
+    "payments": "Payments",
+    "openMenu": "Open menu",
+    "toggleTheme": "Toggle theme",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode",
+    "toggleLanguage": "Change language",
+    "switchToAmharic": "Switch to Amharic",
+    "switchToEnglish": "Switch to English",
+    "menu": "Menu"
+  },
+  "hero": {
+    "tag": "Now Accepting New Clients",
+    "title1": "Restoring",
+    "title2": "Balance In Life",
+    "desc1": "We are professionals dedicated to your recovery.",
+    "desc2": "Mental wellness is our top priority.",
+    "desc3": "Personalized care. Compassion. Expertise.",
+    "cta": "Book Now",
+    "ctaSecondary": "Our Services",
+    "noSlides": "No carousel images uploaded",
+    "slideAlt": "Slide {{number}}"
+  },
+  "about": {
+    "badge": "Who We Are",
+    "title1": "Compassionate Care for a",
+    "title2": "Brighter Tomorrow",
+    "desc1": "Fenote Psychological Services is a premier mental health practice in Addis Ababa dedicated to providing holistic, culturally sensitive psychological services.",
+    "desc2": "We provide individualized, evidence-based counseling tailored to children, adolescents, youth, adults, and vulnerable populations.",
+    "desc1_detail": "Fenote Psychological Services is a premier mental health practice in Addis Ababa dedicated to providing holistic, culturally sensitive psychological services. Our name, meaning \"health\" in Ge'ez, reflects our deep commitment to whole-person wellness.",
+    "desc2_detail": "We provide individualized, evidence-based counseling tailored to children, adolescents, youth, adults, and vulnerable populations. From individual therapy to corporate wellness programs, we offer comprehensive services designed to meet you where you are.",
+    "stat1": "Years Experience",
+    "stat2": "Clients Helped",
+    "stat3": "Service Types",
+    "verified": "Verified Practice",
+    "licensed": "Licensed & Insured",
+    "imageAlt": "Fenote therapy space"
+  },
+  "blog": {
+    "badge": "Blog",
+    "title1": "Insights &",
+    "title2": "Perspectives",
+    "desc": "Articles, stories, and resources to support your mental health journey.",
+    "readMore": "Read More",
+    "seeMore": "See More",
+    "loading": "Loading blogs...",
+    "empty": "No blogs available"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title1": "Tailored Support for",
+    "title2": "Every Need",
+    "desc": "From individual therapy to corporate wellness programs, we offer comprehensive services designed to meet you where you are.",
+    "filterAll": "All Services",
+    "filterTherapy": "Therapy",
+    "filterCoaching": "Coaching",
+    "filterTraining": "Training",
+    "filterCorporate": "Corporate",
+    "learnMore": "Learn More",
+    "individual": {
+      "title": "Individual Counseling",
+      "desc": "Evidence-based counseling tailored to children, adolescents, youth, adults, and vulnerable populations. One-on-one sessions addressing personal, emotional, behavioral, and psychological challenges."
+    },
+    "group": {
+      "title": "Group Counseling",
+      "desc": "Professionally facilitated sessions bringing together individuals facing similar challenges, promoting peer support, shared learning, and social skill development."
+    },
+    "family": {
+      "title": "Family Counseling",
+      "desc": "Engaging parents, children, and family members to strengthen communication, collaborative problem-solving, and overall family cohesion."
+    },
+    "virtual": {
+      "title": "Virtual Counseling",
+      "desc": "Secure virtual counseling through video conferencing, providing the same professional, ethical, and confidential care as in-person sessions."
+    },
+    "telephone": {
+      "title": "Telephone Consultation",
+      "desc": "Short-term psychological guidance and emotional support for urgent or follow-up needs, ensuring accessibility and timely assistance."
+    },
+    "training-pkg": {
+      "title": "Training Packages (Therapy)",
+      "desc": "Structured training equipping children, youth, and adults with life skills, psychological first aid, positive parenting, and MHPSS."
+    },
+    "relationship": {
+      "title": "Relationship Coaching",
+      "desc": "Insights and strategies to foster healthy connections, resolve conflicts, and enhance communication skills in personal or professional relationships."
+    },
+    "training-ws": {
+      "title": "Training & Workshops",
+      "desc": "Life skills, personal development, psychological first aid, positive parenting, youth development, and organizational training programs."
+    },
+    "career": {
+      "title": "Career Counseling & OD",
+      "desc": "Career counseling and organizational development programs that align individual growth with company goals, maximizing efficiency and effectiveness."
+    }
+  },
+  "team": {
+    "badge": "Our Team",
+    "title1": "Meet Our",
+    "title2": "Professionals",
+    "desc": "Our experienced team is committed to improving mental wellbeing.",
+    "seeMore": "See More",
+    "loading": "Loading team...",
+    "empty": "No team members available"
+  },
+  "highlights": {
+    "badge": "Highlights",
+    "title1": "Latest",
+    "title2": "Highlights",
+    "readMore": "Read More",
+    "visitPage": "Visit Page",
+    "loading": "Loading highlights...",
+    "empty": "No highlights available"
+  },
+  "clients": {
+    "badge": "Trusted Companies",
+    "title1": "Trusted by",
+    "title2": "Leading Companies",
+    "desc": "Trusted companies that rely on our care.",
+    "loading": "Loading partners...",
+    "empty": "No partners yet.",
+    "logoAlt": "Client {{index}} logo",
+    "logoFallback": "Logo"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title1": "Hear from Our",
+    "title2": "Supporters",
+    "desc": "Learn how our supporters are helping promote mental well-being and empower individuals.",
+    "loading": "Loading testimonials...",
+    "empty": "No testimonials available"
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title1": "Get In",
+    "title2": "Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "Addis Ababa, Ethiopia",
+    "phone": "Telephone Consultation",
+    "info": "info@fenotepsych.com",
+    "hours": "Mon – Fri 8:00 AM – 6:00 PM",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "How can we help you?",
+    "success": "Message sent successfully! We'll get back to you soon.",
+    "findUs": "Find Us",
+    "visitOffice": "Visit Our Office",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "mapTitle": "Fenote Office Location",
+    "sending": "Sending...",
+    "error": "Could not send your message. Please try again."
+  },
+  "gallery": {
+    "badge": "Photos",
+    "title1": "A Glimpse Into",
+    "title2": "Our Space",
+    "desc": "Explore our welcoming therapy spaces, community events, and the environments where healing happens.",
+    "videoBadge": "Video",
+    "videoTitle1": "Watch Our",
+    "videoTitle2": "Story",
+    "loading": "Loading gallery...",
+    "empty": "No gallery images available",
+    "imageAlt": "Gallery image {{id}}",
+    "videoDesc": "See how Fenote is making a difference in mental health care.",
+    "videoTitle": "Fenote Wellness Introduction",
+    "noVideo": "No gallery video has been uploaded yet."
+  },
+  "resources": {
+    "badge": "Free Wellness Guides",
+    "title1": "Downloadable",
+    "title2": "Resources",
+    "desc": "Downloadable resources to support your mental health journey between sessions. These guides complement our professional services and help you practice wellness daily.",
+    "download": "Download",
+    "disclaimer": "These resources are for informational purposes and complement — but do not replace — professional counseling.",
+    "loading": "Loading resources...",
+    "empty": "No resources available",
+    "noFile": "No file attached"
+  },
+  "payments": {
+    "localBadge": "Local Clients",
+    "localTitle": "Fee - Local Client",
+    "intBadge": "International Clients",
+    "intTitle": "Fee - International Client",
+    "pricingDesc": "Therapy pricing packages",
+    "individual": "Individual Therapy",
+    "couple": "Couple Therapy",
+    "family": "Family Therapy",
+    "training": "Professional Trainings",
+    "phone": "Phone Consultation",
+    "duration": "Duration",
+    "price": "Price",
+    "registration": "Registration",
+    "infoBadge": "Instructions",
+    "infoTitle": "Fenote Payment Information",
+    "howToPay": "How to pay using Fenote:",
+    "step1": "Select one of the bank accounts below or Telebirr.",
+    "step2": "Transfer the required amount using your mobile banking or Telebirr App.",
+    "step3": "When sending money, enter your full name or phone number in the “Reason”, “Remark”, or “Reference” field so we can identify your payment.",
+    "step4": "Keep your transaction receipt for confirmation.",
+    "stepNote": "After payment, please contact us with your receipt to complete your booking.",
+    "accountNum": "Account Number",
+    "noSwift": "Not required",
+    "contactInfo": "Should you need any further information do not hesitate to contact us.",
+    "cbeSubtitle": "Commercial Bank of Ethiopia",
+    "telebirrSubtitle": "Mobile Money",
+    "swiftCode": "SWIFT Code",
+    "notAvailable": "N/A",
+    "cbeLogoAlt": "CBE Logo",
+    "telebirrLogoAlt": "Telebirr Logo"
+  },
+  "footer": {
+    "hours": "Opening Hours",
+    "mon": "Monday",
+    "tue": "Tuesday",
+    "wed": "Wednesday",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday",
+    "closed": "Closed",
+    "stayConnected": "Stay Connected",
+    "newsletterTitle": "Get Wellness Tips & Updates",
+    "newsletterDesc": "Subscribe to our newsletter for mental health resources, upcoming events, and exclusive content.",
+    "emailPlaceholder": "Enter your email",
+    "subscribed": "Subscribed!",
+    "subscribe": "Subscribe",
+    "privacyNote": "We respect your privacy. Unsubscribe anytime.",
+    "description": "Restoring the balance in life. Professional mental health services — Licensed. Confidential. Evidence-based.",
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
+    "individualTherapy": "Individual Therapy",
+    "groupTherapy": "Group Therapy",
+    "corporateWellness": "Corporate Wellness",
+    "contactTitle": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {{year}} Fenote Psychological Services. All rights reserved.",
+    "mapLoading": "Map loading...",
+    "subscribing": "Subscribing...",
+    "subscribeError": "Could not subscribe. Please try again."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error: {{message}}",
+    "errorLoading": "Error loading {{section}}: {{message}}",
+    "select": "Select",
+    "required": "Required",
+    "invalidEmail": "Invalid email",
+    "selectAtLeastOne": "Select at least one",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "cancel": "Cancel",
+    "close": "Close",
+    "bookAppointment": "Book an appointment",
+    "gallery": "Gallery",
+    "slide": "Slide {{number}}",
+    "client": "Client {{index}}",
+    "untitled": "Untitled",
+    "unknown": "Unknown",
+    "notAvailable": "Not available",
+    "noFile": "No file attached",
+    "logo": "Logo",
+    "mapLoading": "Map loading..."
+  },
+  "trust": {
+    "licensedTitle": "Licensed Professionals",
+    "licensedDesc": "Board-certified experts",
+    "confidentialTitle": "Confidential & Secure",
+    "confidentialDesc": "Your privacy is our priority",
+    "evidenceTitle": "Evidence-Based",
+    "evidenceDesc": "Proven therapeutic methods",
+    "experienceTitle": "12+ Years Experience",
+    "experienceDesc": "Trusted by our community"
+  },
+  "book": {
+    "title": "Book Appointment",
+    "selectGender": "Select Gender",
+    "steps": {
+      "personal": "Personal",
+      "background": "Background",
+      "therapy": "Therapy",
+      "health": "Health",
+      "problems": "Problems",
+      "contact": "Contact",
+      "schedule": "Schedule"
+    },
+    "fields": {
+      "name": "Name *",
+      "fatherName": "Father's Name *",
+      "email": "Email *",
+      "phone": "Phone No. *",
+      "sex": "Sex *",
+      "religion": "Religion *",
+      "age": "Age *",
+      "education": "Educational Status *",
+      "occupation": "Occupational Status *",
+      "maritalStatus": "Marital Status",
+      "financialStatus": "Financial Status",
+      "childrenCount": "Children Count",
+      "therapyType": "Therapy Type *",
+      "previousTreatment": "Previous Treatment?",
+      "treatmentDate": "Treatment Date",
+      "familyMentalHistory": "Family Mental History",
+      "medication": "Medication",
+      "physicalHealth": "Physical Health *",
+      "eatingHabit": "Eating Habit",
+      "sleepingHabit": "Sleeping Habit",
+      "chronicPain": "Chronic Pain",
+      "exercise": "Exercise",
+      "substanceUse": "Substance Use",
+      "problems": "Problems *",
+      "otherProblem": "Other Problem",
+      "expectations": "Expectations",
+      "trauma": "Trauma",
+      "city": "City *",
+      "subCity": "Sub-city",
+      "kebele": "Kebele",
+      "houseNo": "House No.",
+      "preferredLanguage": "Preferred Language",
+      "communicationType": "Communication Type",
+      "referralSource": "Referral Source",
+      "additionalInfo": "Additional Info",
+      "emergencyName": "Emergency Name *",
+      "emergencyPhone": "Emergency Phone *",
+      "appointmentDate": "Preferred date *",
+      "appointmentTime": "Available time *"
+    },
+    "messages": {
+      "success": "Thank you! We will call you for booking.",
+      "error": "Submission failed. Please try again.",
+      "fillRequired": "Please fill all required fields correctly",
+      "submitBooking": "Submit Booking",
+      "submitting": "Submitting...",
+      "slotNotice": "Your selected time is held immediately. Confirmation keeps it reserved; a denial makes it available again.",
+      "slotTaken": "That time was just taken. Please choose another available time.",
+      "noSlots": "No available times for this date. Choose another date.",
+      "timezoneNote": "Times are shown in Addis Ababa time.",
+      "selectSlot": "Select a date and one available time before submitting.",
+      "chooseDate": "Choose one of the next 7 days",
+      "closedDay": "Closed",
+      "fullDay": "No times left",
+      "availableSlots": "{{count}} times"
+    },
+    "options": {
+      "gender": {
+        "MALE": "Male",
+        "FEMALE": "Female"
+      },
+      "marital": {
+        "SINGLE": "Single",
+        "INRELATIONSHIP": "In Relationship",
+        "MARRIED": "Married",
+        "DIVORCED": "Divorced",
+        "WINDOWED": "Widowed"
+      },
+      "financial": {
+        "GOOD": "Good",
+        "MEDIUM": "Medium",
+        "POOR": "Poor"
+      },
+      "health": {
+        "GOOD": "Good",
+        "MEDIUM": "Medium",
+        "POOR": "Poor"
+      },
+      "eating": {
+        "GOOD": "Good",
+        "MEDIUM": "Medium",
+        "POOR": "Poor"
+      },
+      "sleeping": {
+        "GOOD": "Good",
+        "MEDIUM": "Medium",
+        "POOR": "Poor"
+      },
+      "trauma": {
+        "YES": "Yes",
+        "NO": "No"
+      },
+      "therapy": {
+        "INDIVIDUAL": "Individual",
+        "COUPLES": "Couples",
+        "MARRIAGE": "Marriage",
+        "FAMILY": "Family",
+        "ADDICTION": "Addiction"
+      },
+      "problems": {
+        "EDUCATIONAL": "Educational",
+        "PERSONAL": "Personal",
+        "SOCIAL": "Social",
+        "FAMILIAL": "Familial",
+        "PEER": "Peer",
+        "SEXUAL": "Sexual",
+        "ROMANTIC": "Romantic",
+        "EMOTIONAL_PSYCHOLOGICAL": "Emotional",
+        "PHYSICAL_HEALTH": "Physical",
+        "MENTAL_HEALTH": "Mental",
+        "FINANCIAL": "Financial",
+        "PROFESSIONAL_SKILL": "Skill Dev",
+        "TIME_MANAGEMENT": "Time Mgmt",
+        "ADDICTION": "Addiction"
+      },
+      "expectations": {
+        "LISTEN": "To be listened",
+        "HISTORY": "Assess history",
+        "NEW": "Learn skills",
+        "ATTITUDE": "Change belief",
+        "HOUSE": "Homework",
+        "AIM": "Understand goals",
+        "CONDITION": "Follow up"
+      },
+      "language": {
+        "AMHARIC": "Amharic",
+        "ENGLISH": "English"
+      },
+      "communication": {
+        "FACETOFACE": "Face to face",
+        "VIDEOCALL": "Video call",
+        "PHONECALL": "Phone call"
+      },
+      "referral": {
+        "INTERNET": "Google Search",
+        "MEDIA": "Social Media",
+        "TICKTOK": "TikTok",
+        "FAMILY": "Friend / Family",
+        "YOUTUBE": "YouTube / Podcast",
+        "HISTOEY": "Previous client referral"
+      },
+      "education": {
+        "HIGH_SCHOOL": "High School",
+        "BACHELORS": "Bachelor's Degree",
+        "MASTERS": "Master's Degree",
+        "PHD": "PhD"
+      }
+    }
+  }
+}

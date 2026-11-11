@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fenote",
+  "main": "deploy/cloudflare/one-worker.example.js",
+  "compatibility_date": "2026-11-07",
+  "compatibility_flags": ["nodejs_compat"],
+  "upload_source_maps": true,
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "052cf4d4a27e40dbb69abb876cf1b1bc"
+    }
+  ],
+  "assets": {
+    "directory": "./cloudflare-dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "FENOTE_WORKER_RUNTIME": "cloudflare",
+    "NODE_ENV": "production",
+    "DATABASE_SSL": "true",
+    "PG_POOL_MAX": "5",
+    "PUBLIC_API_READ_MAX": "1000",
+    "PUBLIC_API_WRITE_MAX": "100",
+    "PUBLIC_URL": "https://fenote.anatamabraham.workers.dev",
+    "ADMIN_URL": "https://fenote.anatamabraham.workers.dev",
+    "ADMIN_APP_ORIGIN": "https://fenote.anatamabraham.workers.dev",
+    "ADMIN_APP_BASE_PATH": "/admin",
+    "ALLOWED_ORIGINS": "https://fenote.anatamabraham.workers.dev",
+    "SUPABASE_URL": "https://aifieorxqzuqwzbrudpn.supabase.co",
+    "SUPABASE_PUBLISHABLE_KEY": "sb_publishable_k7ItqRerAeeyK6kajRMrjQ_mmGT8HxA",
+    "UPLOAD_DIR": "/tmp/fenote_uploads"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

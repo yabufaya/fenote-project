@@ -1,0 +1,26 @@
+# Environment files: examples are tracked, real local values are NOT.
+**/.env
+**/.env.local
+**/.env.*.local
+**/env
+
+# Build output and dependencies
+**/node_modules/
+**/dist/
+node_modules/
+
+# Local-only artifacts
+**/*.log
+
+# Runtime uploads (legacy multer/disk fallback only). Tracked demo assets
+# under admin-app/backend/public/uploads stay in Git for the optional visual
+# check; new admin uploads must go to Supabase Storage, never be committed.
+admin-app/backend/public/uploads/**
+fenote-app/public/uploads/**
+
+# One-app Cloudflare Workers Static Assets output
+cloudflare-dist/
+
+# Wrangler local dev/build cache
+.wrangler/
+wrangler.dev.jsonc

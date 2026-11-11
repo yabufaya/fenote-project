@@ -1,0 +1,457 @@
+{
+  "nav": {
+    "home": "መነሻ",
+    "about": "ስለ እኛ",
+    "blog": "ብሎግ",
+    "services": "አገልግሎቶች",
+    "team": "ቡድናችን",
+    "gallery": "የሥዕል ማሳያ",
+    "resources": "ሀብቶች",
+    "contact": "ያግኙን",
+    "bookNow": "ቀጠሮ ይያዙ",
+    "backHome": "ወደ መነሻ ተመለስ",
+    "payments": "ክፍያ",
+    "openMenu": "ምናሌ ክፈት",
+    "toggleTheme": "ገጽታ ቀይር",
+    "lightMode": "ወደ ብርሃን ገጽታ ቀይር",
+    "darkMode": "ወደ ጨለማ ገጽታ ቀይር",
+    "toggleLanguage": "ቋንቋ ቀይር",
+    "switchToAmharic": "ወደ አማርኛ ቀይር",
+    "switchToEnglish": "ወደ እንግሊዝኛ ቀይር",
+    "menu": "ምናሌ"
+  },
+  "hero": {
+    "tag": "አዳዲስ ደንበኞችን እየቀበልን ነው",
+    "title1": "ሕይወትን በሚገባ",
+    "title2": "ሚዛን ማስቀመጥ",
+    "desc1": "ለመልስተኞትዎ የተሰጡ ባለሙያዎች ነን።",
+    "desc2": "የአእምሮ ጤና ቀዳሚ ቅድሚያችን ነው።",
+    "desc3": "መለየት ያለ እንክብካቤ። ርህራሄ። ባለሙያነት።",
+    "cta": "ቀጠሮ ይያዙ",
+    "ctaSecondary": "አገልግሎቶቻችን",
+    "noSlides": "ምንም የካሮሰል ምስሎች አልተጫኑም",
+    "slideAlt": "ስላይድ {{number}}"
+  },
+  "about": {
+    "badge": "ማን ነን",
+    "title1": "ለብሩህ ነገ ርህራሄ የተሞላበት",
+    "title2": "እንክብካቤ",
+    "desc1": "ፈኖተ ስነ-አእምሮ አገልግሎቶች በአዲስ አበባ የሚገኝ ቀዳሚ የአእምሮ ጤና ተቋም ሲሆን እንደ ጊዜው የሚስተካከል እና ባህላዊ ስሜት ያለው ስራ ነው።",
+    "desc2": "ለህፃናት፣ ለወጣቶች፣ ለአዋቂዎች እና ለተጋላጮ ህብረተሰቦች የተለየ እና ማስረጃ የሆነ ምክር እንሰጣለን።",
+    "desc1_detail": "ፈኖተ የስነ-አእምሮ አገልግሎቶች በአዲስ አበባ ውስጥ የሚገኝ ዋና የአእምሮ ጤና ልምምድ ሲሆን ሁሉን አቀፍ እና በባህል የተስተካከሉ የስነ-አእምሮ አገልግሎቶችን ለማቅረብ የተደረገ ነው። ስማችን በግእዝ \"ጤና\" ማለት ሲሆን ለሙሉ ሰው ደህንነት ያለንን ጥልቅ ቁርጠኝነት ያሳያል።",
+    "desc2_detail": "ለህፃናት፣ ለጎረምሶች፣ ለወጣቶች፣ ለአዋቂዎች እና ለተጋላጭ ክፍሎች በግል የተበጀ እና በማስረጃ ላይ የተመሰረተ የምክር አገልግሎት እንሰጣለን። ከግለሰብ ህክምና እስከ ድርጅታዊ ደህንነት ፕሮግራሞች ድረስ እርስዎ ባሉበት ሁኔታ ለማሟላት የተነደፉ አገልግሎቶችን እናቀርባለን።",
+    "stat1": "ዓመት ልምድ",
+    "stat2": "የተረዱ ደንበኞች",
+    "stat3": "የአገልግሎት ዓይነቶች",
+    "verified": "የተረጋገጠ ተቋም",
+    "licensed": "ፈቃድ እና ኢንሹራንስ",
+    "imageAlt": "የፈኖተ የህክምና ቦታ"
+  },
+  "blog": {
+    "badge": "ብሎግ",
+    "title1": "ግንዛቤዎች እና",
+    "title2": "አመለካከቶች",
+    "desc": "የአእምሮ ጤና ጉዞዎን ለማገዝ መጣጥፎች፣ ታሪኮች እና ሀብቶች።",
+    "readMore": "ተጨማሪ ያንብቡ",
+    "seeMore": "ተጨማሪ ይመልከቱ",
+    "loading": "ብሎጎች በመጫን ላይ...",
+    "empty": "ምንም ብሎጎች የሉም"
+  },
+  "services": {
+    "badge": "አገልግሎቶቻችን",
+    "title1": "ለእያንዳንዱ",
+    "title2": "ፍላጎት የተሰጠ ድጋፍ",
+    "desc": "ከየግል ህክምና እስከ ድርጅታዊ ደህንነት ፕሮግራሞች ሁሉን አቀፍ አገልግሎቶችን እንዲያገኙ እንረዳለን።",
+    "filterAll": "ሁሉም አገልግሎቶች",
+    "filterTherapy": "ህክምና",
+    "filterCoaching": "አሰልጣኝ",
+    "filterTraining": "ስልጠና",
+    "filterCorporate": "ድርጅታዊ",
+    "learnMore": "ተጨማሪ ይወቁ",
+    "individual": {
+      "title": "የግል ምክር",
+      "desc": "ለህፃናት፣ ለጎረምሶች፣ ለወጣቶች፣ ለአዋቂዎች እና ለተጋላጭ ክፍሎች በማስረጃ ላይ የተመሰረተ ምክር። የግል፣ ስሜታዊ፣ ባህሪ እና ስነ-አእምሮ ተግዳሮቶችን የሚፈቱ የአንድ ለአንድ ክፍለ-ጊዜዎች።"
+    },
+    "group": {
+      "title": "የቡድን ምክር",
+      "desc": "ተመሳሳይ ተግዳሮቶች ያለባቸውን ግለሰቦች አንድ ላይ የሚሰበሰቡ፣ የአቻ ድጋፍ፣ የጋራ ትምህርት እና ማህበራዊ ክህሎት እድገትን የሚያበረታቱ በሙያ የተመቻቹ ክፍለ-ጊዜዎች።"
+    },
+    "family": {
+      "title": "የቤተሰብ ምክር",
+      "desc": "መግባባትን፣ የትብብር ችግር አፈታትን እና አጠቃላይ የቤተሰብ ትስስርን ለማጠናከር ወላጆችን፣ ልጆችን እና የቤተሰብ አባላትን ያሳትፋል።"
+    },
+    "virtual": {
+      "title": "የርቀት ምክር",
+      "desc": "ልክ እንደ አካላዊ ክፍለ-ጊዜዎች ተመሳሳይ ሙያዊ፣ ስነ-ምግባራዊ እና ሚስጥራዊ እንክብካቤን በሚሰጥ በቪዲዮ ኮንፈረንስ አማካኝነት አስተማማኝ ምክር።"
+    },
+    "telephone": {
+      "title": "የስልክ ምክክር",
+      "desc": "ለአስቸኳይ ወይም ለተከታታይ ፍላጎቶች የአጭር ጊዜ የስነ-አእምሮ መመሪያ እና ስሜታዊ ድጋፍ፣ ተደራሽነትን እና ወቅታዊ እርዳታን ያረጋግጣል።"
+    },
+    "training-pkg": {
+      "title": "የስልጠና ፓኬጆች (ህክምና)",
+      "desc": "ህፃናትን፣ ወጣቶችን እና አዋቂዎችን በህይወት ክህሎት፣ በስነ-አእምሮ የመጀመሪያ እርዳታ፣ በአዎንታዊ አስተዳደግ እና MHPSS የሚያስታጥቅ የተዋቀረ ስልጠና።"
+    },
+    "relationship": {
+      "title": "የግንኙነት አሰልጣኝ",
+      "desc": "ጤናማ ግንኙነቶችን ለማፍራት፣ ግጭቶችን ለመፍታት እና በግል ወይም በሙያዊ ግንኙነቶች ውስጥ የመግባቢያ ክህሎቶችን ለማሻሻል ግንዛቤዎች እና ስልቶች።"
+    },
+    "training-ws": {
+      "title": "ስልጠና እና አውደ ጥናቶች",
+      "desc": "የህይወት ክህሎት፣ የግል ልማት፣ የስነ-አእምሮ የመጀመሪያ እርዳታ፣ አዎንታዊ አስተዳደግ፣ የወጣቶች ልማት እና ድርጅታዊ ስልጠና ፕሮግራሞች።"
+    },
+    "career": {
+      "title": "የሙያ ምክር እና OD",
+      "desc": "የግለሰብን እድገት ከኩባንያ ግቦች ጋር የሚያጣምሩ፣ ቅልጥፍናን እና ውጤታማነትን ከፍ የሚያደርጉ የሙያ ምክር እና ድርጅታዊ ልማት ፕሮግራሞች።"
+    }
+  },
+  "team": {
+    "badge": "ቡድናችን",
+    "title1": "ባለሙያዎቻችንን",
+    "title2": "ይተዋቈሩ",
+    "desc": "የእኛ ልምድ ያለው ቡድን የአእምሮ ጤናን ለማሻሻል ቁርጠኛ ነው።",
+    "seeMore": "ተጨማሪ ይመልከቱ",
+    "loading": "ቡድኑ በመጫን ላይ...",
+    "empty": "ምንም የቡድን አባላት የሉም"
+  },
+  "highlights": {
+    "badge": "ምርጥ ስራዎች",
+    "title1": "የቅርብ",
+    "title2": "ጊዜ ምርጥ ስራዎች",
+    "readMore": "ተጨማሪ ያንብቡ",
+    "visitPage": "ገጹን ይጎብኙ",
+    "loading": "ምርጥ ስራዎች በመጫን ላይ...",
+    "empty": "ምንም ምርጥ ስራዎች የሉም"
+  },
+  "clients": {
+    "badge": "የታመኑ ኩባንያዎች",
+    "title1": "በእነዚህ",
+    "title2": "ኩባንያዎች የታመነ",
+    "desc": "አገልግሎታችንን የሚያምኑ ኩባንያዎች።",
+    "loading": "ደንበኞች በመጫን ላይ...",
+    "empty": "እስካሁን ምንም አጋሮች የሉም።",
+    "logoAlt": "የደንበኛ {{index}} ሎጎ",
+    "logoFallback": "ሎጎ"
+  },
+  "testimonials": {
+    "badge": "ምስክርነቶች",
+    "title1": "ከደጋፊዎቻችን",
+    "title2": "የሚሰሙት",
+    "desc": "ደጋፊዎቻችን የአእምሮ ጤናን እንዴት እንደሚያስፋፉ እና ጤናማ ሕይወት እንዲመሩ የሚያስችሉ አስፈላጊ የህክምና አገልግሎቶችን እንዴት እንደሚያበረክቱ ይወቁ።",
+    "loading": "ምስክርነቶች በመጫን ላይ...",
+    "empty": "ምንም ምስክርነቶች የሉም"
+  },
+  "contact": {
+    "badge": "ያግኙን",
+    "title1": "ይገናኙ",
+    "title2": "እኛን",
+    "name": "ስም",
+    "email": "ኢሜይል",
+    "message": "መልዕክት",
+    "send": "መልዕክት ላክ",
+    "address": "አዲስ አበባ, ኢትዮጵያ",
+    "phone": "የስልክ ምክር",
+    "info": "info@fenotepsych.com",
+    "hours": "ሰኞ - ቅዳሜ 8:00 AM – 6:00 PM",
+    "namePlaceholder": "ሙሉ ስምዎ",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "እንዴት ልንረዳዎ እንችላለን?",
+    "success": "መልዕክትዎ በተሳካ ሁኔታ ተልኳል! በቅርቡ እንመልሳለን።",
+    "findUs": "ያግኙን",
+    "visitOffice": "ቢሮአችንን ይጎብኙ",
+    "addressLabel": "አድራሻ",
+    "phoneLabel": "ስልክ",
+    "emailLabel": "ኢሜይል",
+    "mapTitle": "የፈኖተ ቢሮ አድራሻ",
+    "sending": "በመላክ ላይ...",
+    "error": "መልዕክትዎን መላክ አልተቻለም። እባክዎ እንደገና ይሞክሩ።"
+  },
+  "gallery": {
+    "badge": "ፎቶዎች",
+    "title1": "የቦታችን",
+    "title2": "ገፅታ",
+    "desc": "ሞቅ ያለ የህክምና ቦታዎቻችንን፣ የህብረተሰብ ዝግጅቶች እና ፈውስ በሚሰራበት ማህደሮች ያስሱ።",
+    "videoBadge": "ቪዲዮ",
+    "videoTitle1": "ታሪካችንን",
+    "videoTitle2": "ይመልከቱ",
+    "loading": "የሥዕል ማሳያ በመጫን ላይ...",
+    "empty": "ምንም የሥዕል ማሳያ ምስሎች የሉም",
+    "imageAlt": "የሥዕል ማሳያ ምስል {{id}}",
+    "videoDesc": "ፈኖተ በአእምሮ ጤና እንክብካቤ የሚያመጣውን ለውጥ ይመልከቱ።",
+    "videoTitle": "የፈኖተ ደህንነት መግቢያ",
+    "noVideo": "ገና የተሰቀለ የሥዕል ማሳያ ቪዲዮ የለም።"
+  },
+  "resources": {
+    "badge": "ነፃ የጤና መመሪያዎች",
+    "title1": "ሊወርዱ የሚችሉ",
+    "title2": "ሀብቶች",
+    "desc": "በክፍለ ጊዜዎች መካከል የአእምሮ ጤና ጉዞዎን ለማገዝ የሚወርዱ ሀብቶች። እነዚህ መመሪያዎች ሙያዊ አገልግሎቶቻችንን ያሟላሉ እና ጤናማ የሆኑ ልምምዶችን እንዲያደርጉ ይረዳሉ።",
+    "download": "ያውርዱ",
+    "disclaimer": "እነዚህ ሀብቶች ለመረጃ ዓላማ ብቻ ሲሆኑ ሙያዊ ምክርን አይተካሉም።",
+    "loading": "ሀብቶች በመጫን ላይ...",
+    "empty": "ምንም ሀብቶች የሉም",
+    "noFile": "ምንም ፋይል አልተያያዘም"
+  },
+  "payments": {
+    "localBadge": "የአገር ውስጥ ደንበኞች",
+    "localTitle": "ክፍያ - አገር ውስጥ ደንበኛ",
+    "intBadge": "ዓለም አቀፍ ደንበኞች",
+    "intTitle": "ክፍያ - ዓለም አቀፍ ደንበኛ",
+    "pricingDesc": "የህክምና ዋጋ ፓኬጆች",
+    "individual": "የግለሰብ ህክምና",
+    "couple": "የትዳር ጥንዶች ህክምና",
+    "family": "የቤተሰብ ህክምና",
+    "training": "ሙያዊ ስልጠናዎች",
+    "phone": "የስልክ ምክር",
+    "duration": "ስያሜ",
+    "price": "ዋጋ",
+    "registration": "ምዝገባ",
+    "infoBadge": "መመሪያዎች",
+    "infoTitle": "የፈኖተ ክፍያ መረጃ",
+    "howToPay": "በፈኖተ እንዴት እንደሚከፍሉ:",
+    "step1": "ከታች ካሉት የባንክ ሂሳቦች ወይም ከቴሌብር አንዱን ይምረጡ።",
+    "step2": "የሞባይል ባንኪንግ ወይም የቴሌብር መተግበሪያ በመጠቀም የሚፈልጉትን መጠን ይላኩ።",
+    "step3": "ገንዘብ ሲላኩ ክፍያዎን ለማስታወቅ በ\"ምክንያት\"፣ \"ማስታወሻ\" ወይም \"ማመላከቻ\" መስክ ውስጥ የሙሉ ስምዎን ወይም የስልክ ቁጥርዎን ያስገቡ።",
+    "step4": "ለማረጋገጥ የገንዘብ ዝውውር ደብዳቤዎን ያስቀምጡ።",
+    "stepNote": "ክፍያው ከተከናወነ በኋላ ቦታዎን ለማጠናቀቅ የደብዳቤውን ማረጋገጫ አብረውን ያግኙን።",
+    "accountNum": "የሂሳብ ቁጥር",
+    "noSwift": "አይፈለግም",
+    "contactInfo": "ተጨማሪ መረጃ ካስፈለገዎት እባክዎን ያግኙን።",
+    "cbeSubtitle": "የኢትዮጵያ ንግድ ባንክ",
+    "telebirrSubtitle": "የሞባይል ገንዘብ",
+    "swiftCode": "የ SWIFT ኮድ",
+    "notAvailable": "አይገኝም",
+    "cbeLogoAlt": "የሲቢኢ ሎጎ",
+    "telebirrLogoAlt": "የቴሌብር ሎጎ"
+  },
+  "footer": {
+    "hours": "የስራ ሰዓት",
+    "mon": "ሰኞ",
+    "tue": "ማክሰኞ",
+    "wed": "ረቡዕ",
+    "thu": "ሐሙስ",
+    "fri": "አርብ",
+    "sat": "ቅዳሜ",
+    "sun": "እሁድ",
+    "closed": "የተዘጋ",
+    "stayConnected": "እንደተገናኙ ይቆዩ",
+    "newsletterTitle": "የጤና ምክሮችንና ዜናዎችን ያግኙ",
+    "newsletterDesc": "ስለ አእምሮ ጤና ሀብቶች፣ መጪ ዝግጅቶች እና ልዩ ይዘቶች ለማግኘት ለዜና መጽሔታችን ይመዝገቡ።",
+    "emailPlaceholder": "ኢሜይልዎን ያስገቡ",
+    "subscribed": "ተመዝግበዋል!",
+    "subscribe": "ይመዝገቡ",
+    "privacyNote": "ግላዊነትዎን እናከብራለን። በማንኛውም ጊዜ መመዝገብ ማቆም ይችላሉ።",
+    "description": "ሕይወትን ሚዛን ማስቀመጥ። ሙያዊ የአእምሮ ጤና አገልግሎቶች — ፈቃድ ያለው። ሚስጥራዊ። በማስረጃ ላይ የተመሰረተ።",
+    "followUs": "ተከታተሉን",
+    "quickLinks": "ፈጣን አገናኞች",
+    "individualTherapy": "የግል ህክምና",
+    "groupTherapy": "የቡድን ህክምና",
+    "corporateWellness": "ድርጅታዊ ደህንነት",
+    "contactTitle": "ያግኙን",
+    "privacy": "የግላዊነት ፖሊሲ",
+    "terms": "የአገልግሎት ውሎች",
+    "copyright": "© {{year}} ፈኖተ የስነ-አእምሮ አገልግሎቶች። መብቱ ሁሉ የተጠበቀ ነው።",
+    "mapLoading": "ካርታ በመጫን ላይ...",
+    "subscribing": "በመመዝገብ ላይ...",
+    "subscribeError": "መመዝገብ አልተቻለም። እባክዎ እንደገና ይሞክሩ።"
+  },
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "error": "ስህተት: {{message}}",
+    "errorLoading": "{{section}} በመጫን ላይ ስህተት: {{message}}",
+    "select": "ይምረጡ",
+    "required": "ያስፈልጋል",
+    "invalidEmail": "የተሳሳተ ኢሜይል",
+    "selectAtLeastOne": "ቢያንስ አንዱን ይምረጡ",
+    "yes": "አዎ",
+    "no": "አይ",
+    "back": "ተመለስ",
+    "next": "ቀጣይ",
+    "submit": "አስገባ",
+    "submitting": "በመላክ ላይ...",
+    "cancel": "ሰርዝ",
+    "close": "ዝጋ",
+    "bookAppointment": "ቀጠሮ ይያዙ",
+    "gallery": "የሥዕል ማሳያ",
+    "slide": "ስላይድ {{number}}",
+    "client": "ደንበኛ {{index}}",
+    "untitled": "ርዕስ የለውም",
+    "unknown": "ያልታወቀ",
+    "notAvailable": "አይገኝም",
+    "noFile": "ምንም ፋይል አልተያያዘም",
+    "logo": "ሎጎ",
+    "mapLoading": "ካርታ በመጫን ላይ..."
+  },
+  "trust": {
+    "licensedTitle": "ፈቃድ ያላቸው ባለሙያዎች",
+    "licensedDesc": "በቦርድ የተመሰከረላቸው ባለሙያዎች",
+    "confidentialTitle": "ሚስጥራዊ እና ደህንነቱ የተጠበቀ",
+    "confidentialDesc": "ግላዊነትዎ ቅድሚያችን ነው",
+    "evidenceTitle": "በማስረጃ ላይ የተመሰረተ",
+    "evidenceDesc": "የተረጋገጡ የህክምና ዘዴዎች",
+    "experienceTitle": "ከ12 ዓመት በላይ ልምድ",
+    "experienceDesc": "በማህበረሰባችን የታመነ"
+  },
+  "book": {
+    "title": "ቀጠሮ ይያዙ",
+    "selectGender": "ፆታ ይምረጡ",
+    "steps": {
+      "personal": "የግል መረጃ",
+      "background": "ዳራ",
+      "therapy": "ህክምና",
+      "health": "ጤና",
+      "problems": "ችግሮች",
+      "contact": "ዕውቂያ",
+      "schedule": "ጊዜ"
+    },
+    "fields": {
+      "name": "ስም *",
+      "fatherName": "የአባት ስም *",
+      "email": "ኢሜይል *",
+      "phone": "ስልክ ቁጥር *",
+      "sex": "ፆታ *",
+      "religion": "ሀይማኖት *",
+      "age": "ዕድሜ *",
+      "education": "የትምህርት ደረጃ *",
+      "occupation": "የስራ ሁኔታ *",
+      "maritalStatus": "የጋብቻ ሁኔታ",
+      "financialStatus": "የገቢ ሁኔታ",
+      "childrenCount": "የልጆች ብዛት",
+      "therapyType": "የምክክር አገልግሎት አይነት *",
+      "previousTreatment": "ከዚህ በፊት ህክምና አግኝተው ያውቃሉ?",
+      "treatmentDate": "የህክምና ቀን",
+      "familyMentalHistory": "የቤተሰብ የአእምሮ ታሪክ",
+      "medication": "መድሃኒት",
+      "physicalHealth": "የአካል ጤና *",
+      "eatingHabit": "የአመጋገብ ልማድ",
+      "sleepingHabit": "የእንቅልፍ ልማድ",
+      "chronicPain": "ሥር የሰደደ ህመም",
+      "exercise": "የአካል ብቃት እንቅስቃሴ",
+      "substanceUse": "ሱስ አጠቃቀም",
+      "problems": "ችግሮች *",
+      "otherProblem": "ሌላ ችግር",
+      "expectations": "የምክክር ተስፋ",
+      "trauma": "አስከፊ ህይወት",
+      "city": "ከተማ *",
+      "subCity": "ክ/ከተማ",
+      "kebele": "ቀበሌ",
+      "houseNo": "የቤት ቁጥር",
+      "preferredLanguage": "ተመራጭ ቋንቋ",
+      "communicationType": "የመገኛ ዘዴ",
+      "referralSource": "ማስተላለፊያ",
+      "additionalInfo": "ተጨማሪ መረጃ",
+      "emergencyName": "የአደጋ ተጠሪ ስም *",
+      "emergencyPhone": "የአደጋ ተጠሪ ስልክ *",
+      "appointmentDate": "ተመራጭ ቀን *",
+      "appointmentTime": "የሚገኝ ሰዓት *"
+    },
+    "messages": {
+      "success": "እናመሰግናለን! ለቀጠሮ እንደውልዎታለን።",
+      "error": "መላኩ አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+      "fillRequired": "እባክዎ ሁሉንም አስፈላጊ መስኮች በትክክል ይሙሉ",
+      "submitBooking": "ቀጠሮ አስገባ",
+      "submitting": "በመላክ ላይ...",
+      "slotNotice": "የመረጡት ሰዓት ወዲያውኑ ይያዛል። ሲረጋገጥ የተያዘ ሆኖ ይቀጥላል፤ ሲከለከል እንደገና ይገኛል።",
+      "slotTaken": "ያ ሰዓት አሁን ተይዟል። እባክዎ ሌላ የሚገኝ ሰዓት ይምረጡ።",
+      "noSlots": "በዚህ ቀን የሚገኝ ሰዓት የለም። ሌላ ቀን ይምረጡ።",
+      "timezoneNote": "ሰዓቶች በአዲስ አበባ ሰዓት ይታያሉ።",
+      "selectSlot": "ከማስገባትዎ በፊት ቀንና አንድ የሚገኝ ሰዓት ይምረጡ።",
+      "chooseDate": "ከሚቀጥሉት 7 ቀናት አንዱን ይምረጡ",
+      "closedDay": "ዝግ",
+      "fullDay": "የሚገኝ ሰዓት የለም",
+      "availableSlots": "{{count}} ሰዓታት"
+    },
+    "options": {
+      "gender": {
+        "MALE": "ወንድ",
+        "FEMALE": "ሴት"
+      },
+      "marital": {
+        "SINGLE": "ያላገባ",
+        "INRELATIONSHIP": "በግንኙነት ውስጥ",
+        "MARRIED": "ያገባ",
+        "DIVORCED": "የተፋታ",
+        "WINDOWED": "ባለቤት ያጣ"
+      },
+      "financial": {
+        "GOOD": "ጥሩ",
+        "MEDIUM": "መካከለኛ",
+        "POOR": "ዝቅተኛ"
+      },
+      "health": {
+        "GOOD": "ጥሩ",
+        "MEDIUM": "መካከለኛ",
+        "POOR": "ዝቅተኛ"
+      },
+      "eating": {
+        "GOOD": "ጥሩ",
+        "MEDIUM": "መካከለኛ",
+        "POOR": "ዝቅተኛ"
+      },
+      "sleeping": {
+        "GOOD": "ጥሩ",
+        "MEDIUM": "መካከለኛ",
+        "POOR": "ዝቅተኛ"
+      },
+      "trauma": {
+        "YES": "አዎ አጋጥሞኝ ያውቃል",
+        "NO": "አጋጥሞኝ አያውቅም"
+      },
+      "therapy": {
+        "INDIVIDUAL": "ግላዊ",
+        "COUPLES": "የጥንዶች",
+        "MARRIAGE": "የትዳር",
+        "FAMILY": "የቤተሰብ",
+        "ADDICTION": "ከሱስ ጋር የተያያዘ"
+      },
+      "problems": {
+        "EDUCATIONAL": "ትምህርታዊ",
+        "PERSONAL": "ግላዊ",
+        "SOCIAL": "ማህበራዊ",
+        "FAMILIAL": "ከቤተሰብ",
+        "PEER": "ከእኩዮች",
+        "SEXUAL": "ወሲባዊ",
+        "ROMANTIC": "የፍቅር",
+        "EMOTIONAL_PSYCHOLOGICAL": "ስሜታዊ",
+        "PHYSICAL_HEALTH": "አካላዊ",
+        "MENTAL_HEALTH": "የአእምሮ",
+        "FINANCIAL": "ኢኮኖሚያዊ",
+        "PROFESSIONAL_SKILL": "የሥራ ክህሎት",
+        "TIME_MANAGEMENT": "የጊዜ",
+        "ADDICTION": "ከሱስ"
+      },
+      "expectations": {
+        "LISTEN": "መደመጥ",
+        "HISTORY": "ታሪክ",
+        "NEW": "ክህሎት",
+        "ATTITUDE": "አስተሳሰብ",
+        "HOUSE": "የቤት ስራ",
+        "AIM": "አላማ",
+        "CONDITION": "ሁኔታ"
+      },
+      "language": {
+        "AMHARIC": "አማርኛ",
+        "ENGLISH": "እንግሊዝኛ"
+      },
+      "communication": {
+        "FACETOFACE": "በአካል",
+        "VIDEOCALL": "በቪዲዮ",
+        "PHONECALL": "በስልክ"
+      },
+      "referral": {
+        "INTERNET": "በጉግል ፍለጋ",
+        "MEDIA": "ማህበራዊ ሚዲያ",
+        "TICKTOK": "ቲክቶክ",
+        "FAMILY": "ጓደኛ / ቤተሰብ",
+        "YOUTUBE": "ዩቲዩብ / ፖድካስት",
+        "HISTOEY": "ከቀድሞ ደንበኛ ማጣቀሻ"
+      },
+      "education": {
+        "HIGH_SCHOOL": "ሁለተኛ ደረጃ ትምህርት ቤት",
+        "BACHELORS": "የባችለር ዲግሪ",
+        "MASTERS": "የማስተርስ ዲግሪ",
+        "PHD": "የዶክትሬት ዲግሪ"
+      }
+    }
+  }
+}

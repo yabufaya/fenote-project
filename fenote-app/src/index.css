@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,300;1,6..72,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+
+:root {
+  --bg-primary: #F0F7FF; --bg-secondary: #FFFFFF; --bg-card: rgba(255,255,255,0.85);
+  --text-primary: #1E293B; --text-secondary: #475569; --text-muted: #94A3B8;
+  --accent: #3B82F6; --mint: #10B981;
+  --border: rgba(59,130,246,0.15); --shadow: 0 4px 24px rgba(59,130,246,0.08);
+  --glass-bg: rgba(255,255,255,0.6); --glass-border: rgba(255,255,255,0.4);
+}
+
+.dark-mode {
+  --bg-primary: #0F172A; --bg-secondary: #1E293B; --bg-card: rgba(30,41,59,0.85);
+  --text-primary: #E2E8F0; --text-secondary: #94A3B8; --text-muted: #64748B;
+  --accent: #60A5FA; --mint: #34D399;
+  --border: rgba(96,165,250,0.2); --shadow: 0 4px 24px rgba(0,0,0,0.3);
+  --glass-bg: rgba(15,23,42,0.6); --glass-border: rgba(96,165,250,0.15);
+}
+
+body { background-color: var(--bg-primary); color: var(--text-primary); transition: background-color 0.6s ease, color 0.6s ease; }
+
+/* Utility overrides for CSS variables */
+.bg-primary { background-color: var(--bg-primary) !important; }
+.bg-secondary { background-color: var(--bg-secondary) !important; }
+.bg-card { background-color: var(--bg-card) !important; }
+.bg-glass { background: var(--glass-bg) !important; backdrop-filter: blur(16px) !important; -webkit-backdrop-filter: blur(16px) !important; border: 1px solid var(--glass-border) !important; }
+.text-primary { color: var(--text-primary) !important; }
+.text-secondary { color: var(--text-secondary) !important; }
+.text-muted { color: var(--text-muted) !important; }
+.text-accent { color: var(--accent) !important; }
+.text-mint { color: var(--mint) !important; }
+.border-theme { border-color: var(--border) !important; }
+.shadow-theme { box-shadow: var(--shadow) !important; }
+
+
+/* Near-black bottom footer background only; its columns reveal on scroll. */
+.footer-dark {
+  background-color: #0B0F14 !important;
+  background-image:
+    radial-gradient(circle at 12% 0%, rgba(59, 130, 246, 0.10), transparent 38%),
+    radial-gradient(circle at 88% 100%, rgba(16, 185, 129, 0.07), transparent 42%);
+}
+
+/* Animations & Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+/* Public SPA scroll-flow reveals. JavaScript adds .js-scroll-flow before
+   paint; without JS or with reduced motion, everything stays visible.
+   The independent `translate` property keeps Tailwind hover transforms working. */
+@keyframes fenoteRevealUp {
+  from { opacity: 0; translate: 0 28px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes fenoteRevealLeft {
+  from { opacity: 0; translate: -32px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes fenoteRevealRight {
+  from { opacity: 0; translate: 32px 0; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes fenoteRevealFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.js-scroll-flow [data-reveal] { opacity: 0; translate: 0 28px; }
+.js-scroll-flow [data-reveal="left"] { translate: -32px 0; }
+.js-scroll-flow [data-reveal="right"] { translate: 32px 0; }
+.js-scroll-flow [data-reveal="fade"] { translate: 0 0; }
+.js-scroll-flow [data-reveal].is-visible {
+  animation: fenoteRevealUp 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+.js-scroll-flow [data-reveal="left"].is-visible { animation-name: fenoteRevealLeft; }
+.js-scroll-flow [data-reveal="right"].is-visible { animation-name: fenoteRevealRight; }
+.js-scroll-flow [data-reveal="fade"].is-visible { animation-name: fenoteRevealFade; }
+
+.overlay-page { position: fixed; inset: 0; z-index: 1500; background: var(--bg-primary); overflow-y: auto; transform: translateY(100%); transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+.overlay-page.active { transform: translateY(0); }
+
+.lightbox-overlay { position: fixed; inset: 0; z-index: 2500; background: rgba(0,0,0,0.92); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+.lightbox-overlay.open { opacity: 1; pointer-events: auto; }
+
+/* Trusted-company logo marquee — single, predictable definition */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover,
+.marquee-track:focus-within { animation-play-state: paused; }
+.clients-marquee {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+.marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 48px;
+  padding-right: 48px;
+}
+
+@keyframes chatPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(59,130,246,0.5); } 50% { box-shadow: 0 0 0 12px rgba(59,130,246,0); } }
+.chat-btn { animation: chatPulse 2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .chat-btn { animation: none; }
+  .js-scroll-flow [data-reveal],
+  .js-scroll-flow [data-reveal].is-visible {
+    opacity: 1 !important;
+    translate: 0 0 !important;
+    animation: none !important;
+  }
+}
+
+/* ========== COLORFUL MOBILE SLIDE MENU ========== */
+.mobile-menu-panel {
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(59,130,246,0.10), transparent 38%),
+    radial-gradient(circle at 100% 100%, rgba(16,185,129,0.09), transparent 42%);
+}
+.mobile-menu-link {
+  --item-accent: #3B82F6;
+  --item-soft: rgba(59,130,246,.13);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+  transition: transform 0.22s ease, background-color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.mobile-menu-link:hover,
+.mobile-menu-link:focus-visible {
+  background: var(--item-soft);
+  border-color: color-mix(in srgb, var(--item-accent) 38%, transparent);
+  box-shadow: 0 10px 22px color-mix(in srgb, var(--item-accent) 14%, transparent);
+  transform: translateX(5px);
+  outline: none;
+}
+.mobile-menu-link:active { transform: scale(0.98); }
+.mobile-menu-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 0.85rem;
+  color: var(--item-accent);
+  background: color-mix(in srgb, var(--item-accent) 15%, transparent);
+  transition: background-color 0.22s ease, color 0.22s ease, transform 0.22s ease;
+}
+.mobile-menu-link:hover .mobile-menu-icon,
+.mobile-menu-link:focus-visible .mobile-menu-icon {
+  background: var(--item-accent);
+  color: #fff;
+  transform: rotate(-6deg) scale(1.07);
+}
+.mobile-menu-label { flex: 1; min-width: 0; }
+.mobile-menu-arrow {
+  color: var(--item-accent);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+.mobile-menu-link:hover .mobile-menu-arrow,
+.mobile-menu-link:focus-visible .mobile-menu-arrow { opacity: 1; transform: translateX(0); }
+.dark-mode .mobile-menu-panel {
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(96,165,250,0.14), transparent 38%),
+    radial-gradient(circle at 100% 100%, rgba(52,211,153,0.11), transparent 42%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-link, .mobile-menu-icon, .mobile-menu-arrow { transition: none; }
+  .mobile-menu-link:hover, .mobile-menu-link:hover .mobile-menu-icon { transform: none; }
+}

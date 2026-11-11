@@ -1,0 +1,45 @@
+# LEGACY two-Worker example. For the one-app deployment use ../../wrangler.jsonc.
+# Copy to repo root as wrangler.public.toml, then run:
+#   npx wrangler deploy -c wrangler.public.toml
+# Create the Hyperdrive config with Supabase's DIRECT connection string:
+#   npx wrangler hyperdrive create fenote-supabase --connection-string="..."
+# Docs: https://developers.cloudflare.com/workers/databases/third-party-integrations/supabase/
+
+name = "fenote-public-api"
+main = "deploy/cloudflare/public-worker.example.js"
+compatibility_date = "2026-11-03"
+compatibility_flags = ["nodejs_compat"]
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "<HYPERDRIVE_CONFIG_ID>"
+
+[vars]
+NODE_ENV = "production"
+PG_POOL_MAX = "5"
+PUBLIC_URL = "https://fenotepsych.com"
+ADMIN_URL = "https://fenotepsych.com"
+ALLOWED_ORIGINS = "https://fenotepsych.com"
+
+# Public Supabase values are safe as vars. The API verifies USER access tokens
+# with getClaims(); it never needs a secret/service key.
+SUPABASE_URL = "https://wscpswlfcruheibfyivm.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "YOUR_NEW_SUPABASE_PUBLISHABLE_KEY"
+
+# Admin authorization is DB-backed via public.admin_profiles; no env allowlists.
+# For the public SPA build, set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY
+# in the Static Assets / Pages build environment (publishable key only).
+
+# Workers' node:fs is ephemeral and request-scoped: migrate multer disk
+# uploads to Supabase Storage / R2 before go-live. This is a read-only path
+# for the already committed sample assets only.
+UPLOAD_DIR = "/tmp/fenote_uploads"
+
+[observability]
+enabled = true
+
+# No secrets are required for Supabase Auth token verification.
+# DATABASE_URL is supplied by the HYPERDRIVE binding at runtime.
+# For the two React builds use Cloudflare Workers Static Assets / Pages:
+#   directory = "fenote-app/dist" / "admin-app/frontend/dist"
+#   add an SPA rewrite to index.html (BrowserRouter).

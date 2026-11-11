@@ -1,0 +1,125 @@
+# Render Blueprint — portable FALLBACK only. The user chose Cloudflare-first;
+# see deploy/cloudflare/* and SUPABASE_DEPLOYMENT_PLAN.md for the primary path.
+# Supabase Postgres + Supabase Auth + 2 APIs + 2 static SPAs.
+# Secrets marked `sync: false` are entered in the Render dashboard, never here.
+# Docs: https://render.com/docs/environment-variables (PORT is injected, default 10000)
+
+services:
+  # ── Public API ────────────────────────────────────────────────────────
+  - type: web
+    name: fenote-public-api
+    runtime: node
+    rootDir: server
+    plan: starter
+    healthCheckPath: /health
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: PG_POOL_MAX
+        value: "5"
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: PUBLIC_URL
+        sync: false
+      - key: ADMIN_URL
+        sync: false
+      # Optional local/multer fallback only. Production uploads go directly to Supabase Storage.
+      - key: UPLOAD_DIR
+        value: /tmp/fenote_uploads
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+
+  # ── Admin API ─────────────────────────────────────────────────────────
+  - type: web
+    name: fenote-admin-api
+    runtime: node
+    rootDir: admin-app/backend
+    plan: starter
+    healthCheckPath: /health
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: PG_POOL_MAX
+        value: "5"
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: ADMIN_URL
+        sync: false
+      - key: ADMIN_APP_ORIGIN
+        sync: false
+      - key: PUBLIC_URL
+        sync: false
+      - key: UPLOAD_DIR
+        value: /tmp/fenote_uploads
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+
+  # ── Public SPA ────────────────────────────────────────────────────────
+  - type: web
+    name: fenote-public-site
+    runtime: static
+    rootDir: fenote-app
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
+      - key: VITE_API_URL
+        sync: false
+      - key: VITE_PUBLIC_SITE_URL
+        sync: false
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_PUBLISHABLE_KEY
+        sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+  # ── Admin SPA ─────────────────────────────────────────────────────────
+  - type: web
+    name: fenote-admin-site
+    runtime: static
+    rootDir: admin-app/frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
+      - key: VITE_API_URL
+        sync: false
+      - key: VITE_PUBLIC_SITE_URL
+        sync: false
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: VITE_SUPABASE_STORAGE_ENABLED
+        value: "true"
+      - key: VITE_STORAGE_BUCKET_IMAGES
+        value: fenote-images
+      - key: VITE_STORAGE_BUCKET_VIDEOS
+        value: fenote-videos
+      - key: VITE_STORAGE_BUCKET_DOCUMENTS
+        value: fenote-documents
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

@@ -1,0 +1,36 @@
+# LEGACY two-Worker example. For the one-app deployment use ../../wrangler.jsonc.
+# Copy to repo root as wrangler.admin.toml.
+
+name = "fenote-admin-api"
+main = "deploy/cloudflare/admin-worker.example.js"
+compatibility_date = "2026-11-03"
+compatibility_flags = ["nodejs_compat"]
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "<HYPERDRIVE_CONFIG_ID>"
+
+[vars]
+NODE_ENV = "production"
+PG_POOL_MAX = "5"
+ADMIN_URL = "https://fenotepsych.com"
+ADMIN_APP_ORIGIN = "https://fenotepsych.com"
+PUBLIC_URL = "https://fenotepsych.com"
+ALLOWED_ORIGINS = "https://fenotepsych.com"
+
+SUPABASE_URL = "https://wscpswlfcruheibfyivm.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "YOUR_NEW_SUPABASE_PUBLISHABLE_KEY"
+
+# Admin authorization is DB-backed via public.admin_profiles; no app_metadata role.
+
+UPLOAD_DIR = "/tmp/fenote_uploads"
+
+[observability]
+enabled = true
+
+# No secrets are required for Supabase Auth token verification.
+# DATABASE_URL is supplied by the HYPERDRIVE binding at runtime.
+# Static Assets / Pages for the SPAs:
+#   directory = "fenote-app/dist" / "admin-app/frontend/dist"
+#   add an SPA rewrite to index.html for the admin site (BrowserRouter).
+#   set VITE_API_URL to this Worker's /api URL (services/api.js already uses it).
